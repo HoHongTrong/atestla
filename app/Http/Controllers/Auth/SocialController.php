@@ -25,7 +25,6 @@ class SocialController extends Controller
   public function handleProviderCallback()
   {
     $user = Socialite::driver('twitter')->user();
-    dd($user);
-    // $user->token;
+
   }
 }
