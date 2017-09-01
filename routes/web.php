@@ -18,10 +18,12 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
+//
 Route::get('login/twitter', 'Auth\SocialController@redirectToProvider');
 Route::get('login/twitter/callback', 'Auth\SocialController@handleProviderCallback');
 
 Route::get('twitterUserTimeLine', 'TwitterController@twitterUserTimeLine');
 Route::post('tweet', ['as'=>'post.tweet','uses'=>'TwitterController@tweet']);
 
+Route::get('/auth/{provider}', 'SocialAuthController@redirectToProvider');
+Route::get('/auth/{provide}/callback', 'SocialAuthController@handleProviderCallback');

@@ -67,8 +67,11 @@
 
                         <div class="form-group">
                             <div class="col-md-8" style="left: 320px;">
-                                <a class="btn btn-link" href="{{ URL::to('login/twitter') }}">
+                                <a class="btn btn-link" href="{{ URL::to('auth/twitter') }}">
                                     <i class="fa fa-twitter-square" aria-hidden="true"></i> Đăng nhập bằng Twitter
+                                </a>
+                                <a class="btn btn-link" href="{{ URL::to('auth/google') }}">
+                                    <i class="fa fa-google-plus-square" aria-hidden="true"></i> Đăng nhập bằng Google
                                 </a>
                             </div>
                         </div>

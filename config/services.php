@@ -34,11 +34,17 @@ return [
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
+  'google' => [
+    'client_id' => '604286052414-lm2b9iaedebd99lknsd331srd52ctasp.apps.googleusercontent.com',
+    'client_secret' => '3vNgJZ8vsuC2PpUu-_ehm6xT',
+    'redirect' => 'http://atestla.dev:8080/public/auth/google/callback',
+  ],
 
   'twitter' => [
     'client_id' => '1tc8EfjSz1xl4bUq3y92v2hm9',
-    'client_secret' => '	9G4EWt5ipbAjzuGnPtHWKFRnmPpx8YWLo2c4XjQoKUeBgcvFum',
-    'redirect' => 'http://atestla.dev:8080/public/login/twitter/callback',
+    'client_secret' => '9G4EWt5ipbAjzuGnPtHWKFRnmPpx8YWLo2c4XjQoKUeBgcvFum',
+    'redirect' => 'https://b50354e7.ngrok.io/auth/twitter/callback',
   ],
 
+  
 ];
